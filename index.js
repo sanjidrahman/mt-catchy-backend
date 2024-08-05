@@ -5,14 +5,14 @@ const cors = require('cors');
 const vdrRoute = require('./routes/vendorRoute');
 const admRoute = require('./routes/adminRoute');
 
-mongoose.connect('mongodb+srv://sanjid:mongosanjid@cluster0.ylbg7lk.mongodb.net/catchy')  
+mongoose.connect('mongodb+srv://sanjid:mongosanjid@cluster0.ylbg7lk.mongodb.net/catchyy')  
 .then(() => console.log('DB Connected..'))
 .catch((err) => console.log(err.message))
 
 app.use(express.urlencoded({ extended : true }));
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:4200'],
+    origin: ['http://localhost:4200', 'https://catchyfrontend.vercel.app'],
 }))
 
 app.use('/', express.static('public'))
