@@ -5,7 +5,7 @@ const cors = require('cors');
 const vdrRoute = require('./routes/vendorRoute');
 const admRoute = require('./routes/adminRoute');
 
-mongoose.connect('mongodb://localhost:27017/catchyy')  
+mongoose.connect('mongodb+srv://sanjid:mongosanjid@cluster0.ylbg7lk.mongodb.net/catchy')  
 .then(() => console.log('DB Connected..'))
 .catch((err) => console.log(err.message))
 
